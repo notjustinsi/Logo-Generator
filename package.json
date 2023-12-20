@@ -1,17 +1,24 @@
 {
   "name": "module_10",
   "version": "1.0.0",
-  "description": "",
+  "description": "SVG Logo Generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "SVG",
+    "Logo",
+    "Generator"
+  ],
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.12",
-    "svg.js": "^2.7.1"
+    "inquirer": "^9.2.12"
+  },
+  "jest": {
+    "testMatch": ["**/__tests__/index.test.js"]
   },
   "devDependencies": {
     "jest": "^29.7.0"
