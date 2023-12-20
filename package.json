@@ -1,10 +1,11 @@
 {
+  "type": "module",
   "name": "module_10",
   "version": "1.0.0",
   "description": "SVG Logo Generator",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
-    "start": "node index.js",
+    "start": "node --loader ts-node/esm index.cjs",
     "test": "jest"
   },
   "keywords": [
@@ -18,9 +19,14 @@
     "inquirer": "^9.2.12"
   },
   "jest": {
-    "testMatch": ["**/__tests__/index.test.js"]
+    "testMatch": [
+      "**/__tests__/index.test.js"
+    ]
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "exports": {
+    ".": "./index.cjs"
   }
 }
